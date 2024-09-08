@@ -130,3 +130,8 @@ const observer = new IntersectionObserver((entries) => {
 allSections.forEach(section => {
   observer.observe(section);
 });
+
+
+const textElement = document.querySelector('.animated-text');
+const text = textElement.textContent;
+textElement.innerHTML = text.split('').map(char => `<span>${char}</span>`).join('');

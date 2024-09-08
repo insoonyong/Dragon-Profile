@@ -771,6 +771,57 @@ button:hover {
   font-size: 40px;
 }
 
+.contacttext {
+  width: 100%;
+  height: 400px;
+  top: 150px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactbox h3  {
+  font-size: 30px;
+}
+
+.contactbox p {
+  font-size: 30px;
+}
+
+.animated-text {
+  display: inline-block;
+}
+
+.animated-text span {
+  display: inline-block;
+  font-size: 40px;
+  color:  #4187f6;
+  animation: grow 1s ease-in-out infinite;
+  animation-fill-mode: forwards;
+  margin-left: 10px;
+}
+.animated-text span:last-child {
+  margin-right: 10px; /* 마지막 글자에 간격을 주지 않음 */
+}
+
+.animated-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.animated-text span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+@keyframes grow {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(2);
+  }
+}
+
+
 
 /* 사이드바 네비게이션 모바일 스타일 */
 @media (max-width: 768px) {
